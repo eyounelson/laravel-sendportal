@@ -18,7 +18,7 @@ class TagResource extends SendPortalResource
     {
         $response = $this->client->send(
             method: Method::GET,
-            url: '/tags',
+            url: '/tags?per_page=100',
         );
 
         if ($response->failed()) {
